@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "gitbook serve",
+    "install-plugin": "gitbook install",
     "build": "gitbook build",
     "pdf": "gitbook pdf ./ ./java_styleguide.pdf",
     "test": "echo \"Error: no test specified\" && exit 1"
