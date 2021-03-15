@@ -11,7 +11,7 @@
 **类**文件<span style="color:red">必须</span>使用`UpperCamelCase`风格，异常类命名使用Exception结尾；测试类命名以它要测试的类名开始，以Test结尾；枚举类名建议带上Enum后缀，枚举成员名称需要全大写，单词间用下划线隔开。 但以下情形例外：DO / BO / DTO / VO / AO / PO等。 
 <br><span style="color:green">正例</span>：
 
-```shell
+```
 MarcoPolo.java
 UserDO.java
 XmlService.java

@@ -100,13 +100,13 @@ if (condition) return something;
    <span style="color:green">正例</span>：
 
    ```java
-   private final static Map<Integer, String> STATUS_NAME_MAP = new HashMap<>(){{
+   
+   private final static Map<Integer, String> STATUS_NAME_MAP = new HashMap<>(){ {
      put(0, "未支付");
      put(1, "已支付");
      put(2, "已发货");
      put(3, "已签收");
    }};
-   
    private final static String NOT_FOUND_STATUS = "未找到";
    
    public String getStatusName(int status) {
