@@ -70,21 +70,22 @@ if (condition) return something;
   <br><span style="color:orange">说明</span>：很多if语句内的逻辑相当复杂，阅读者需要分析条件表达式的最终结果，才能明确什么样的条件执行什么样的语句，那么，如果阅读者分析逻辑表达式错误呢？ <br><span style="color:green">正例</span>： 
 
   ```java
-  // 伪代码如下 final boolean existed = (file.open(fileName, "w") != null) && (...) || (...); 
+  // 伪代码如下 
+  final boolean existed = (file.open(fileName, "w") != null) && (...) || (...); 
   if (existed) {    
      ... 
   }  
   ```
-  <span style="color:red">反例</span>：
-
+<span style="color:red">反例</span>：
+  
   ```java
   if ((file.open(fileName, "w") != null) && (...) || (...)) {     
     ... 
   }
-  ```
-
+```
   
 
+  
 5. 【推荐】避免采用取反逻辑运算符。 
   <br><span style="color:orange">说明</span>：取反逻辑不利于快速理解，并且取反逻辑写法必然存在对应的正向逻辑写法。 
   <br><span style="color:green">正例</span>：使用if (x < 628) 来表达 x 小于628。
